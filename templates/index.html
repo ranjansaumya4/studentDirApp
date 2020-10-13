@@ -1,0 +1,67 @@
+<h1>Get Student Data</h1>
+<br />
+Enter Roll Number <br />
+<form action="{{ url_for('data')}}" method="post">
+  <input
+    type="text"
+    name="Roll Number"
+    placeholder="Roll"
+    required="required"
+  />
+
+  <button type="submit" class="btn btn-primary btn-block btn-large">
+    Get Data
+  </button>
+</form>
+
+{% if result_data %} Roll : {{ result_data[0] }}
+<br />
+Name : {{ result_data[1] }}
+<br />
+Email : {{ result_data[2] }}
+<br />
+Address : {{ result_data[3] }} {% endif %}
+<br />
+<br />
+<br />
+<h1>Create Student Data</h1>
+<form action="{{ url_for('createRecord')}}" method="post">
+  Roll
+  <input
+    style="margin: 3px"
+    type="text"
+    name="Roll Number"
+    placeholder="Roll"
+    required="required"
+  /><br />
+  Name
+  <input
+    style="margin: 3px"
+    style="margin: 3px"
+    type="text"
+    name="Name"
+    placeholder="Name"
+    required="required"
+  /><br />
+  Email
+  <input
+    style="margin: 3px"
+    type="text"
+    name="Email"
+    placeholder="Email"
+    required="required"
+  /><br />
+  Address
+  <input
+    style="margin: 3px"
+    type="text"
+    name="Address"
+    placeholder="Address"
+    required="required"
+  /><br />
+
+  <button type="submit" class="btn btn-primary btn-block btn-large">
+    Create Data
+  </button>
+</form>
+{% if is_record_created %} NEW RECORD CREATED!! {% endif %}
