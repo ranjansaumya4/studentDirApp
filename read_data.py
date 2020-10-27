@@ -6,7 +6,7 @@ config = {
     'host': 'mydbtest777.mysql.database.azure.com',
     'user': 'saumya@mydbtest777',
     'password': 'Sran@1708',
-    'database': 'tutorialdb'
+    'database': 'mydatbase7'
 }
 
 
