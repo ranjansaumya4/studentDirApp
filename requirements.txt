@@ -62,6 +62,7 @@ soupsieve==2.0.1
 SpeechRecognition==3.8.1
 sqlparse==0.3.1
 tabulate==0.8.7
+traitlets==5.0.3
 threadpoolctl==2.1.0
 toml==0.10.1
 traitlets==5.0.3
